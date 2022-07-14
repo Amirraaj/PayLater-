@@ -1,0 +1,177 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: #3A3A42;
+	box-sizing: content-box;
+}
+
+.img{
+	position: absolute;
+	margin-top: 20%;
+	left:-1000px;
+  width: 100px;
+  height: 100px;
+  transition: 0.5s;
+
+
+
+}
+.menu{
+	position: fixed;
+	height: 100vh;
+	background: #5a97b3;
+	width: 10vw;
+	box-shadow: 1px 0 2px rgba(0, 0, 0, 0.2);
+	transition: 1s;
+}
+.menu:hover{
+	width: 40vw;
+}
+.menu:hover nav{
+	left: 20%;
+}
+.menu:hover .img{
+	left: 20%;
+}
+nav{
+	position: absolute;
+	margin-top: 50%;
+	left: -1000px;
+	transition: 0.5s;
+}
+
+nav ul{
+	color: white;
+	text-transform: uppercase;
+	list-style-type: none;
+}
+nav li{
+	line-height: 2em;
+	letter-spacing: 0.3em;
+}
+nav a{
+	font-size: 30px;
+	text-decoration: none;
+	color: white;
+	font-weight: 600;
+}
+nav a:hover{
+	color:#eee;
+}
+
+.container{
+	width: 90%;
+	margin-left: 10vw;
+	background: #FDFDFD;
+	transition: 1s;
+	transform-origin: left center;
+	color: #D2D2D0;
+}
+.menu:hover ~ .container {
+  transform: perspective(80vw) rotateY(10deg) translateX(35vw) scaleY(1.2);
+}
+.container .content{
+	padding: 135px 20%;
+}
+
+p{
+	line-height: 1.5em;
+}
+
+h1,th,td,label{
+	color: rgb(17, 17, 17);
+}
+
+
+
+.container table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.container td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 10px;
+  width: 50px;
+
+}
+
+.container a{
+   text-decoration: none;
+
+
+}
+
+.container tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.container h1{
+    text-align: center;
+    padding: 40px;
+}
+.container form{
+    padding: 60px;
+    margin-left: 5px;
+}
+.container form .email-bt{
+    padding: 20px;
+    width: 40%;
+    color: rgb(15, 14, 14);
+}
+
+.container form .update-bt{
+    padding: 10px;
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-weight: 700;
+    border: 2px solid rgb(128, 106, 106);
+
+    overflow: hidden;
+    color: rgb(15, 14, 14);
+
+}
+.container form .update-bt:hover{
+    background-color: rgb(128, 106, 106);
+}
+
+.text-danger{
+color: red;
+}
+.Btn-Nav{
+  background-color: #98ec9c;
+  border: none;
+  color: white;
+  padding: 15px 45px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.Btn-Nav:hover{
+    background-color:  #fcf48d;
+}
+.table-bordered{
+    margin-left: 5px;
+}
+
+.table-bordered a{
+    color: red;
+}
+.Section-Divider{
+    border: 1px solid #eeeff0;
+    border-radius: 20px;
+    border-width: 4px;
+
+}
+.Section-Divider h2{
+    text-align: center;
+
+}
